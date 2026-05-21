@@ -22,14 +22,37 @@ function Home() {
           responsive, and user-friendly websites using HTML, CSS,
           JavaScript, React, and modern technologies.
         </p>
+        <div className="contact-info">
+          <div className="contact-info">
+
+  <p>📧 Email: dineshrajeshmdu@gmail.com</p>
+
+  <p>📱 Phone: +91 8438809244</p>
+
+  <p>
+     
+    <a href="https://www.linkedin.com/in/your-Dineshpandi-s" >
+      🔗 LinkedIn:
+    </a>
+  </p>
+
+  <p>
+     
+    <a href="https://github.com/your-Dineshpandi2004" > 💻 GitHub:
+    </a>
+  </p>
+
+</div>
+        </div>
+
 
         <div className="buttons">
-          <a href="/" className="btn">
-            Download CV
-          </a>
+     <a href="/Resume.pdf" download="My_Resume.pdf" className="btn">
+  Download CV
+</a>
 
           <a href="/" className="btn btn-outline">
-            Hire Me
+              🚀 Hire Me
           </a>
         </div>
 

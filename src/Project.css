@@ -1,71 +1,86 @@
-/* Portfolio.css */
-
-.portfolio {
+.project {
   min-height: 100vh;
+  background: #0f172a;
+  color: white;
   padding: 50px 20px;
-  background: #f4f7fb;
-  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.portfolio-title {
-  font-size: 3rem;
-  color: #222;
+.project-title {
+  font-size: 36px;
   margin-bottom: 40px;
+  color: #38bdf8;
 }
 
+/* GRID */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* Optional card styling if used inside Project component */
+/* CARD */
 .project-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
 }
 
-.project-title {
-  font-size: 1.5rem;
-  color: #111;
+/* TEXT */
+.project-card h2 {
   margin-bottom: 10px;
 }
 
-.project-description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.5;
+.project-card p {
+  margin-bottom: 10px;
+  color: #cbd5e1;
 }
 
-.project-tech {
-  font-size: 0.95rem;
-  color: #0077ff;
-  font-weight: bold;
-  margin-bottom: 15px;
+.tech {
+  font-size: 14px;
+  color: #38bdf8;
 }
 
-.project-link {
-  display: inline-block;
+/* BUTTONS */
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons a {
   text-decoration: none;
-  background: #0077ff;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #38bdf8;
+  color: black;
+  transition: 0.3s;
 }
 
-.project-link:hover {
-  background: #005ecc;
+.buttons a:hover {
+  background: #0ea5e9;
+}
+
+.demo-btn {
+  background: #22c55e;
+}
+
+.demo-btn:hover {
+  background: #16a34a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 28px;
+  }
 }

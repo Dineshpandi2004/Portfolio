@@ -1,0 +1,38 @@
+.skills-container {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.skills-container h1 {
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 25px;
+  background-color: #4caf50;
+  text-align: right;
+  color: white;
+  line-height: 25px;
+  padding-right: 10px;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}

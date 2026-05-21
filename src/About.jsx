@@ -1,62 +1,50 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
 
 function About() {
   return (
     <section className="about">
 
-      <div className="about-image">
-        <img
-          
-        />
-      </div>
+      <div className="about-container">
 
-      <div className="about-content">
-
-        <h3>About Me</h3>
-
-        <h1>
-          Frontend <span>Developer</span>
-        </h1>
-
-        <p>
-          Hello! I'm Dinesh Pandi, a passionate Frontend Developer
-          who loves building responsive and user-friendly websites.
-          I specialize in HTML, CSS, JavaScript, React JS, and modern
-          web technologies.
-        </p>
-
-        <p>
-          I enjoy creating beautiful UI designs, smooth animations,
-          and interactive web applications that provide a great user
-          experience across all devices.
-        </p>
-
-        <div className="skills">
-
-          <div className="skill-box">
-            <h2>HTML</h2>
-          </div>
-
-          <div className="skill-box">
-            <h2>CSS</h2>
-          </div>
-
-          <div className="skill-box">
-            <h2>JavaScript</h2>
-          </div>
-
-          <div className="skill-box">
-            <h2>React</h2>
-          </div>
-
-        
-
+        <div className="about-image">
+          <img 
+          src="data:image/jpeg;base64,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"
+          alt="profile"
+          />
         </div>
 
-        <a href="/" className="about-btn">
-          Read More
-        </a>
+        <div className="about-content">
+
+          <h3>About Me</h3>
+
+          <h1>
+            Frontend <span>Developer</span>
+          </h1>
+
+          <p>
+            Hello! I'm Dinesh Pandi, a passionate Frontend Developer
+            who loves building responsive and user-friendly websites.
+          </p>
+
+          <p>
+            I specialize in HTML, CSS, JavaScript, React JS and enjoy
+            creating modern UI designs and smooth user experiences.
+          </p>
+
+          <div className="skills">
+            <div className="skill-box">HTML</div>
+            <div className="skill-box">CSS</div>
+            <div className="skill-box">JavaScript</div>
+            <div className="skill-box">React</div>
+          </div>
+
+          <Link to="/" className="about-btn">
+            Back to Home
+          </Link>
+
+        </div>
 
       </div>
 

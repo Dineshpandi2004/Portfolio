@@ -190,6 +190,13 @@ body{
         height: 260px;
     }
 }
+.btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
 @media(max-width: 480px){
 
